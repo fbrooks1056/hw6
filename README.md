@@ -172,6 +172,9 @@ This likely will require the child component `BadgerMessage.jsx` to talk back to
 
 Go back and be sure that each `input` has an `id` associated with the `htmlFor` of a `label`. If you are using [react-bootstrap](https://www.npmjs.com/package/react-bootstrap) components, be sure each `Form.Control` has an `id` associated with the `htmlFor` of a `Form.Label`. [Read more here.](https://react.dev/reference/react-dom/components/input#providing-a-label-for-an-input)
 
-### Done! 🥳
+### Submission
+**Before submitting to Gradescope, you have one more thing to do!** In the root directory (that contains this `README.md`). Create a file named `.badgerid`. Then, paste your Badger ID (and only your BadgerID; no spaces or newline characters) into this file. This is used by Gradescope in your submission.
 
-Congrats! Add, commit, and push your files to GitHub Classroom and paste your commit hash in the Canvas assignment.
+Finally, add, commit, and push your changed files to your GitHub Classroom repository. Then, zip the `hw6` folder and submit to Gradescope. Autograding tests should complete within a few minutes. Review your results, and submit as many times as you need up until the assignment deadline. 🥳
+
+**Important:** Gradescope expects everything to be within the `hw6` zip. If the file path is not prefixed with `hw6` as below, you will *not* pass the autograder. Other files such as figures and git files can be included, but are ignored by the autograding process.
