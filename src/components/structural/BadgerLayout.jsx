@@ -33,7 +33,17 @@ function BadgerLayout(props) {
                         <Nav.Link as={Link} to="register">Register</Nav.Link>
                         <NavDropdown title="Chatrooms">
                             {
-                                /* TODO Display a NavDropdown.Item for each chatroom that sends the user to that chatroom! */
+                                props.chatrooms.length === 0 ?
+                                    <NavDropdown.Item disabled>Loading chatrooms...</NavDropdown.Item> :
+                                    props.chatrooms.map(chatroom => {
+                                        return <NavDropdown.Item
+                                            key={chatroom}
+                                            as={Link}
+                                            to={`/chatrooms/${chatroom}`}
+                                        >
+                                            {chatroom}
+                                        </NavDropdown.Item>
+                                    })
                             }
                         </NavDropdown>
                     </Nav>
